@@ -8,7 +8,9 @@ const promiseOutput = async (keyword) => {
 
     const data = await [...theaterIXX, ...theaterVGC ];
 
-    const countMatchedKey = data.filter(item => {}).length;
+    const countMatchedKey = data.filter(item => {
+      return item.hasil == keyword
+    }).length;
     return countMatchedKey;
   } catch (err) {
     console.log(err);
