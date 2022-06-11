@@ -3,10 +3,10 @@ const { promiseTheaterIXX, promiseTheaterVGC, promiseTheaterIXX, promiseTheaterV
 // TODO: Buat fungsi promiseOutput sesuai ketentuan readme
 const promiseOutput = async (keyword) => {
   try {
-    const promiseTheaterIXX = await promiseTheaterIXX();
-    const promiseTheaterVGC = await promiseTheaterVGC();
+    const theaterIXX = await promiseTheaterIXX();
+    const theaterVGC = await promiseTheaterVGC();
 
-    const data = await[...promiseTheaterIXX, ...theaterVGC ];
+    const data = await [...theaterIXX, ...theaterVGC ];
 
     const countMatchedKey = data.filter(item => {}).length;
     return countMatchedKey;
