@@ -1,4 +1,4 @@
-const { promiseTheaterIXX, promiseTheaterVGC, promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
+const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
 
 // TODO: Buat fungsi promiseOutput sesuai ketentuan readme
 const promiseOutput = async (keyword) => {
